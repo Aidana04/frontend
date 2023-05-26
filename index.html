@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Figma</title>
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+			margin: 0px;
+			text-transform: capitalize;
+		}
+		body {
+			background-color: #F0F0F6;
+		}
+		.container {
+			display: flex;
+			gap: 30px;
+		}
+		.left {
+			width: 305px;
+			height: 1260px;
+			float: left;
+			background-color: white;
+		}
+		.left hr {
+			margin-left: 40px;
+			margin-right: 45px;
+		}
+		.left1 {
+			padding-top: 50px;
+			text-align: center;
+		}
+		.photo {
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+		}
+		.name {
+			padding-top: 31px;
+			padding-bottom: 15px;
+		}
+		.ikonka {
+			padding-top: 15px;
+			padding-bottom: 25px;
+			margin-left: 40px;
+			margin-right: 45px;
+			display: flex;
+			justify-content: space-between;
+		}
+		.ikonka-item {
+			width: 24px;
+			height: 24px;
+			border-radius: 50%;
+			background-color: #ffb400;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.left2 {
+			margin-left: 40px;
+			margin-right: 45px;
+			margin-top: 25px;
+			margin-bottom: 25px;
+		}
+		.left2-item {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			display: flex;
+			justify-content: space-between;
+		}
+		.item-key {
+			background-color: #ffb400;
+		}
+		.left3 {
+			margin-left: 41px;
+			margin-right: 46px;
+			margin-top: 22px;
+			margin-bottom: 26px;
+		}
+		.languages {
+			margin-bottom: 5px;
+		}
+		.languages-word1 {
+
+		}
+		.languages-word2 {
+			float: right;
+		}
+		.left4 {
+			margin-top: 25px;
+			margin-bottom: 26px;
+			margin-left: 40px;
+			margin-right: 45px;
+		}
+		.skills {
+			margin-bottom: 5px;
+		}
+		.skills1 {
+
+		}
+		.skills2 {
+			float: right;
+		}
+		.left5 {
+			margin-top: 25px;
+			margin-bottom: 25px;
+			margin-left: 40px;
+		}
+		.extra {
+			margin-top: 5px;
+		}
+		.extra span {
+			margin-left: 15px;
+		}
+		.btn {
+			margin: 25px 45px;
+			text-align: center;
+			border: none;
+			padding: 10px 72px 10px 40px;
+			background-color: #ffb400;
+		}
+		.btn img {
+			vertical-align: middle;
+		}
+		main {
+			width: 870px;
+		}
+		.main1 {
+			width: 100%;
+			height: 464px;
+			background-color: white;
+			margin-bottom: 138px;
+			display: flex;
+			position: relative;
+		}
+		.main1name {
+			width: 57%;
+			height: 100%;
+			padding: 93px 27px 0px 60px;
+		}
+		.main1name h1 {
+			padding-bottom: 25px;
+		}
+		.main1name span {
+			color: #ffb400;
+		}
+		.main1name p {
+			padding-bottom: 30px;
+		}
+		.main1name button {
+			width: 154px;
+			height: 51px;
+			border: none;
+			border-radius: 3px;
+			background-color: #ffb400;
+		}
+		.main1photo {
+			width: 40%;
+		}
+		.main1photo img {
+			width: 100%;
+		}
+		.ellipse div {
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			border-style: solid;
+			border-width: 2px;
+		}
+		.ellipse1 {
+			border-color: orange;
+			position: absolute;
+			left: 40px;
+			top: 30px;
+		}
+		.ellipse2 {
+			border-color: green;
+			position: absolute;
+			left: 88px;
+			bottom: 29px;
+		}
+		.ellipse3 {
+			border-color: green;
+			position: absolute;
+			left: 520px;
+			top: 52px;
+		}
+		.ellipse4 {
+			border-color: orange;
+			position: absolute;
+			left: 476px;
+			bottom: 56px;
+		}
+		.rotate div {
+			width: 16px;
+			height: 16px;
+			transform: rotate(26.05deg);
+			border-style: solid;
+			border-width: 2px;
+		}
+		.rotate1 {
+			color: blue;
+			position: absolute;
+			left: 370px;
+			bottom: 112px;
+		}
+		.rotate2 {
+			color: orange;
+			position: absolute;
+			right: 40px;
+			top: 30px;
+		}
+		.main2 h2, .main2 p, .main2 h4{
+			text-align: center;
+		}
+		.main2bloc {
+			width: 31%;
+			height: 225px;
+			background-color: white;
+			margin-bottom: 20px;
+		}
+		.main2bloc p {
+			padding-top: 10px;
+		}
+		.main2img {
+			padding-top: 30px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.main2blocs {
+			display: flex;
+			align-content: stretch;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			padding-bottom: 70px;
+		}
+		#main2bloc {
+			padding-top: 30px;
+		}
+		#main2bloc p {
+			padding-top: 22px;
+		}
+		.main3 {
+			margin-bottom: 70px;
+		}
+		.main3 h2, .main3 p, .main3 h4{
+			text-align: center;
+		}
+		.main3blocs {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 70px;
+			position: relative;
+		}
+		.main3bloc {
+			width: 31%;
+			height: 609px;
+			padding-right: 31px;
+			padding-left: 31px;
+			background-color: white;
+		}
+		.main3bloc2 {
+			height: 30px;
+			width: 31%;
+			background-color: #ffb400;
+			vertical-align: middle;
+			text-align: center;
+			box-sizing: border-box;
+			padding-top: 5px;
+			position: absolute;
+			left: 300px;
+			top: 0;
+
+		}
+		.main3bloc h3 {
+			padding-top: 54px;
+			text-align: center;
+		}
+		.main3bloctop {
+			padding-top: 19px;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+		}
+		.main3bloc1 {
+			padding-top: 8px;
+			padding-bottom: 21px;
+		}
+		.main3bloc3 {
+			margin-bottom: 18px;
+			display: flex;
+			gap: 18px ;
+		}
+		.main3bloc4 {
+			display: flex;
+			justify-content: center;
+			padding-top: 20px;
+
+		}
+		.main3bloc4 button {
+			width: 169px;
+			height: 38px;
+			border-radius: 19px;
+		}
+
+
+		.main4 {
+			padding-bottom: 70px;
+		}
+		.main4 h2 {
+			text-align: center;
+			padding-bottom: 25px;
+		}
+		.main4p {
+			text-align: center;
+			padding-bottom: 50px;
+		}
+		.main4container {
+			display: flex;
+			justify-content: space-between;
+		}
+		.main4bloc {
+			width: 31%;
+			height: 329px;
+			padding: 25px;
+			background-color: white;
+		}
+		.main4pictures {
+			width: 130px;
+			display: flex;
+			justify-content: space-between;
+			padding-bottom: 17px;
+		}
+		.main4comment1 {
+			padding-bottom: 18px;
+		}
+		.main4comment2 {
+			padding-bottom: 30px;
+		}
+			
+		.main4person {
+			display: flex;
+			align-items: center;
+			gap: 13px;
+		}
+		.main4photo img {
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+		}
+		.main4bottom {
+			padding-top: 50px;
+			width: 50px;
+			height: 10px;
+			position: relative;
+			left: calc(50% - 25px);
+			display: flex;
+			justify-content: space-between;
+		}
+		.main4bottom div {
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			border: 5px #ffb400 solid;
+		}
+
+
+
+		.main5 {
+			padding-bottom: 70px;
+		}
+		.main5h2 {
+			text-align: center;
+			padding-bottom: 25px;
+		}
+		.main5p {
+			text-align: center;
+			padding-bottom: 50px;
+		}
+		.main5blocs {
+			width: 100%;
+			height: 632px;
+			background-color: white;
+			padding: 19px 29px 38px 37px;
+		}
+
+		.main5bloc {
+			width: 100%;
+			height: 210px;
+			padding-top: 28px;
+			display: flex;
+			justify-content: space-between;
+
+		}
+		.main5blocleft {
+			width: 20%;
+		}
+		.main5blocleft h4 {
+			padding-bottom: 32px;
+		}
+		.main5student {
+			display: flex;
+			justify-content: space-between;
+		}
+		.main5studentp {
+			background-color: #ffb400;
+			font-size: 10px;
+			padding: 4px 7px 4px 7px;
+		}
+
+		.main5blocright {
+			width: 55%;
+		}
+		.main5blocright h4 {
+			padding-bottom: 28px;
+		}
+
+		.main6 {
+			margin-bottom: 50px;
+		}
+		.main6categoriescontainer {
+			display: flex;
+			justify-content: center;
+		}
+		.main6categories {
+			width: 606px;
+			height: 22px;
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 50px;
+		}
+		.main6categories h4:hover {
+			color: #ffb400;
+			cursor: pointer;
+		}
+
+
+		.main6photocontainer {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		.main6photo {
+			width: 31%;
+			position: relative;
+		}
+		.main6photoimg {
+			width: 100%;
+			margin-bottom: 20px;
+			z-index: 0;
+			position: static;
+			left: 0;
+			top: 0;
+		}
+		.main6photovector:hover {
+			position: absolute;
+			left: 0;
+			top: 0;
+			background-color: rgba(255, 136, 0, 0.8);
+			padding: calc(50% - 20.5px) calc(50% - 16px);
+			opacity: 1;
+			cursor: pointer;
+		}
+		.main6photovector{
+			padding: calc(50% - 20.5px) calc(50% - 16px);
+			position: absolute;
+			left: 0;
+			top: 0;
+			opacity: 0;
+			transition-duration: 0.3s;
+		}
+
+		.main7 {
+			margin-bottom: 70px;
+		}
+		.main7blocs {
+			display: flex;
+			justify-content: space-between;
+		}
+		.main7bloc {
+			width: 31%;
+			background-color: white;
+		}
+		.main7bloc > div {
+			padding: 0px 17px 9px 25px;
+		}
+		.main7bloc > img{
+			width: 100%;
+			margin-bottom: 25px;
+		}
+		.main7bloc h4 {
+
+		}
+		.main7bloc p {
+			margin-bottom: 8px;
+			margin-top: 8px;
+		}
+
+		.main8 {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 71px;
+		}
+		.main8lefrcontainer {
+			width: 58%;
+		}
+		.main8 h2 {
+			padding-bottom: 50px;
+		}
+		.main8left {
+			width: 100%;
+			height: 665px;
+			background-color: white;
+			padding: 25px;
+		}
+		.main8left div {
+			padding-bottom: 25px;
+		}
+		.main8left p {
+			padding-bottom: 8px;
+		}
+		.main8left input {
+			width: 100%;
+			height: 50px;
+			background-color: #f0f0f6;
+			border: none;
+		}
+		.main8lefttext {
+			height: 210px;
+			width: 100%;
+			background-color: #f0f0f6;
+			border: none;
+			z-index: ;
+		}
+		.main8leftbtn {
+			width: 159px;
+			height: 35px;
+			background-color: #ffb400;
+			border: none;
+		}
+		.main8rightcontainer {
+			width: 38%;
+
+		}
+		.main8right {
+			width: 100%;
+			height: 665px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.main8rightbloc {
+			width: 100%;
+			height: 31%;
+			background-color: white;
+			padding: 25px 25px 0px;
+		}
+		.main8righticonka {
+			display: flex;
+			justify-content: center;
+			padding-bottom: 31px;
+		}
+		.main8righticonka div {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background-color: #ffb400;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.main8righticonka img {
+
+		}
+		.main8righttext {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 16px;
+		}
+
+		.bottomimg {
+			display: flex;
+			justify-content: space-between;
+			padding-top: 70px;
+		}
+		footer {
+			width: 100%;
+			height: 60px;
+			background-color: white;
+			margin-top: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+
+		.rightbar {
+			width: 80px;
+			height: 100vh;
+			background-color: white;
+			display: flex;	
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			position: sticky;
+			top: 0px;
+			left: 0px;
+
+		}
+		.rightbarimg {
+			padding-top: 52px;
+			padding-bottom: 150px;
+		}
+		.rightbarimgs {
+			background-color: #f0f0f6;
+			width: 40px;
+			height: 40px;
+			border-radius: 20px;
+			margin-bottom: 30px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			cursor: pointer;
+			transition-duration: 0.3s;
+		}
+		.rightbarimgs:hover {
+			background-color: #ffb400;
+		}
+		.rightbarword {
+			width: 65px;
+			height: 24px;
+			text-align: center;
+			background-color: #2b2b2b;
+			position: absolute;
+			top: -30px;
+			left: -12px;
+			border-radius: 2px;
+			color: white;
+			opacity: 0;
+			transition-duration: 0.3s;
+		}
+		.poligon {
+			width: 18px;
+			height: 18px;
+			border-top: #2b2b2b solid 9px;
+			border-right: rgba(0, 0, 0, 0) solid 9px;
+			border-left: transparent solid 9px;
+			position: absolute;
+			top: -6px;
+			left: 11px;
+			opacity: 0;
+			transition-duration: 0.3s;
+		}
+		.rightbarimgs:hover .rightbarword, .rightbarimgs:hover .poligon {
+			opacity: 1;
+		}
+button {
+	cursor: pointer;
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="left">
+			<div class="left1">
+				<img class="photo" src="InShot_20221208_214445549.jpg">
+				<h4 class="name">Abdirasul Aidana</h4>
+				<p>Front-end Developer</p>
+				<div class="ikonka">
+					<div class="ikonka-item">
+						<img src="images/face.svg">
+					</div>
+					<div class="ikonka-item">
+						<img src="images/Ins.svg"/>
+					</div>
+					<div class="ikonka-item">
+						<img src="images/Twit.svg"/>
+					</div>
+					<div class="ikonka-item">
+						<img src="images/lin.svg"/>
+					</div>
+					<div class="ikonka-item">
+						<img src="images/you.svg"/>
+					</div>
+					<div class="ikonka-item">
+						<img src="images/Drib.svg"/>	
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="left2">
+				<div class="left2-item">
+					<span class="item-key">Age</span>
+					<span class="item-value">18</span>
+				</div>
+				<div class="left2-item">
+					<span class="item-key">Resident:</span>
+					<span class="item-value">BD</span>
+				</div>
+				<div class="left2-item">
+					<span class="item-key">Freelance</span>
+					<span class="item-value" style="color: #7EB942;">Available</span>
+				</div>
+				<div class="left2-item">
+					<span class="item-key">Resident:</span>
+					<span class="item-value">18</span>
+				</div>
+			</div>
+			<hr>
+			<div class="left3">
+				<h4 style="margin-bottom: 15px;">Languages</h4>
+				<div class="languages">
+					<span class="languages-word1">Kazakh</span>
+					<span class="languages-word2">100%
+					</span>
+					<img src="images/line.svg">
+				</div>
+				<div class="languages">
+					<span class="languages-word1">English</span>
+					<span class="languages-word2">80%</span>
+					<img src="images/line (1).svg">
+				</div>
+				<div class="languages">
+					<span class="languages-word1">Turkey</span>
+					<span class="languages-word2">60%</span>
+					<img src="images/line (2).svg">
+				</div>
+			</div>
+			<hr>
+			<div class="left4">
+				<h4 style="margin-bottom:15px;">Skills</h4>
+				<div class="skills">
+					<span class="skills1">HTML</span>
+					<span class="skills2">90%</span>
+					<img src="images/line (3).svg">
+				</div>
+				<div class="skills">
+					<span class="skills1">CSS</span>
+					<span class="skills2">85%</span>
+					<img src="images/line (4).svg">
+				</div>
+				<div class="skills">
+					<span class="skills1">Js</span>
+					<span class="skills2">80%</span>
+					<img src="images/line (5).svg">
+				</div>
+				<div class="skills">
+					<span class="skills1">React</span>
+					<span class="skills2">75%</span>
+					<img src="images/line (6).svg">
+				</div>
+				<div class="skills">
+					<span class="skills1">Redux</span>
+					<span class="skills2">85%</span>
+					<img src="images/line (4).svg">
+				</div>
+			</div>
+			<hr>
+			<div class="left5">
+				<h4 style="margin-bottom: 15px;">Extra skills</h4>
+				<div class="extra">
+					<img src="images/Icons.svg"><span>Bootstrap, Materialize</span>
+				</div>
+				<div class="extra">
+					<img src="images/Icons.svg"><span>Stylux, Sass, Less</span>
+				</div>
+				<div class="extra">
+					<img src="images/Icons.svg"><span>Gulp, Webpack, Grunt</span>
+				</div>
+				<div class="extra">
+					<img src="images/Icons.svg"><span>GIT Knowledge</span>
+				</div>
+			</div>
+			<hr>
+			<div class="left6">
+				<button class="btn">
+					Dowload CV  
+					<img src="images/Frame.svg">
+				</button>
+			</div>
+		</div>
+		<main>	
+			<div class="main1">
+				<div class="main1name">
+					<h1>I’m Abdurasil Aidana <br>
+					<span>Front-end</span> Developer </h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Et, volutpat feugiat placerat lobortis. Natoque <br> rutrum semper sed suspendisse nunc lectus.</p>
+					<button>HIRE ME <img src="images/Vector.svg"></button>
+				</div>
+				<div class="main1photo">
+					<img src="InShot_20221208_222402538.jpg">
+				</div>
+				<div class="ellipse">
+					<div class="ellipse1"></div>
+					<div class="ellipse2"></div>
+					<div class="ellipse3"></div>
+					<div class="ellipse4"></div>
+				</div>
+				<div class="rotate">
+					<div class="rotate1"></div>
+					<div class="rotate2"></div>
+				</div>
+			</div>
+			<div class="main2">
+				<div>
+					<h2 style="margin-bottom:25px;">My Services</h2>
+					<p style="margin-bottom:50px;">Amet minim mollit non deserunt ullamco est sit aliqua dolor <br>do amet sint. Velit officia consequat duis enim velit mollit.<br> lorem ipsum</p>
+				</div>
+				<div class="main2blocs">
+					<div class="main2bloc">
+						<div class="main2img">
+							<img src="images/web.svg">
+						</div>
+						<br>
+						<h4>Web Develoment</h4>
+						<p>Blog, E-commerce</p>
+					</div>
+					<div class="main2bloc">
+						<div class="main2img">
+							<img src="images/uiux.svg">
+						</div>
+						<br>
+						<h4>UI/UX desing</h4>
+						<p>Mobile App, Website Desing</p>
+					</div>
+					<div class="main2bloc">
+						<div class="main2img">
+							<img src="images/microphone.svg">	
+						</div>
+						<br>
+						<h4>Sound Desing</h4>
+						<p>Voice Over, Beat Making</p>
+					</div>
+					<div class="main2bloc">
+						<div class="main2img">
+							<img src="images/game.svg">
+						</div>
+						<br>
+						<h4>Game Desing</h4>
+						<p>Character Design, Props & Objects</p>
+					</div>
+					<div class="main2bloc">
+						<div class="main2img">
+							<img src="images/photography.svg">
+						</div>
+						<br>
+						<h4>Photography</h4>
+						<p>Portrait, Product Photography</p>
+					</div>
+					<div class="main2bloc" id="main2bloc">
+						<h4>Advertising</h4>
+						<p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi. </p>
+						<p style="color: #ffb400; cursor: pointer;">ORDER NOW <img src="images/order.svg"></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="main3">
+					<h2 style="margin-bottom:25px;">Price Plans</h2>
+					<p style="margin-bottom:50px;">Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor <br> Do Amet Sint. Velit Officia Consequat Duis Enim Velit Mollit.<br>lorem Ipsum</p>
+					<div class="main3blocs">
+						<div class="main3bloc">
+							<h3>SILVER</h3>
+							
+							<div class="main3bloctop">
+								<h2>$0.00</h2>
+								<p>/Hour</p>
+							</div>
+							<div class="main3bloc1">
+								<p>For most businesses that want to optimize web queries</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/a.svg">	
+								<p>UI Design</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/a.svg">	
+								<p>Web Developmed</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/b.svg">	
+								<p>Logo Design</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/b.svg">	
+								<p>Seo Optimization</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/b.svg">	
+								<p>WordPress Integration</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/b.svg">	
+								<p>5 Websites</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/b.svg">	
+								<p>Unlimited User</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/b.svg">	
+								<p>20 GB Bandwith</p>
+							</div>
+							<div class="main3bloc4">
+								<button>ORDER NOW</button>
+							</div>
+						</div>
+						
+						<div class="main3bloc" >
+							
+							<h3>GOLD</h3>
+							
+							<div class="main3bloctop">
+								<h2>$50.00</h2>
+								<p>/Hour</p>
+							</div>
+							<div class="main3bloc1">
+								<p>For most businesses that want to optimize web queries</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/a.svg">	
+								<p>UI Design</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/a.svg">	
+								<p>Web Developmed</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/a.svg">	
+								<p>Logo Design</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/a.svg">	
+								<p>Seo Optimization</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/b.svg">	
+								<p>WordPress Integration</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/b.svg">	
+								<p>5 Websites</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/b.svg">	
+								<p>Unlimited User</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/b.svg">	
+								<p>20 GB Bandwith</p>
+							</div>
+							<div class="main3bloc4">
+								<button style="background-color: #ffb400;">ORDER NOW</button>
+							</div>
+						</div>
+						
+						<div class="main3bloc">
+							<h3>DIAMONT</h3>
+							
+							<div class="main3bloctop">
+								<h2>$80.00</h2>
+								<p>/Hour</p>
+							</div>
+							<div class="main3bloc1">
+								<p>For most businesses that want to optimize web queries</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/a.svg">	
+								<p>UI Design</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/a.svg">	
+								<p>Web Developmed</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/a.svg">	
+								<p>Logo Design</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/a.svg">	
+								<p>Seo Optimization</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/a.svg">	
+								<p>WordPress Integration</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/a.svg">	
+								<p>5 Websites</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/a.svg">	
+								<p>Unlimited User</p>
+							</div>
+							<div class="main3bloc3">
+								<img src="images/a.svg">	
+								<p>20 GB Bandwith</p>
+							</div>
+							<div class="main3bloc4">
+								<button>ORDER NOW</button>
+							</div>
+						</div>
+						<div class="main3bloc2">
+							<p>Most popular</p>
+						</div>
+					</div>					
+			</div>
+			
+			<div class="main4">
+					<h2>Recommendations</h2>
+					<p class="main4p">Amet Minim Mollit Non Deserunt Ullamco Est sit aliqua dolor <br> do amet sint. Velit officia consequat duis enim velit mollit. <br> lorem ipsum</p>
+
+					<div class="main4container">
+						<div class="main4bloc">
+							<div class="main4pictures">
+								<img src="images/star.svg">
+								<img src="images/star.svg">
+								<img src="images/star.svg">
+								<img src="images/star.svg">
+								<img src="images/star.svg">
+							</div>
+							<h4 class="main4comment1">Great Quality!</h4>
+							<p class="main4comment2">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Vitae <br>nulla diam in ac dictum a urna <br> viverra morbi. Morbi donec amet....</p>
+							<div class="main4person">
+								<div class="main4photo">
+									<img src="InShot_20221208_214445549.jpg">
+								</div>
+								<div class="main4name">
+									<h4>James Gouse</h4>
+									<p>Graphic Designer</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="main4bloc">
+							<div class="main4pictures">
+								<img src="images/star.svg">
+								<img src="images/star.svg">
+								<img src="images/star.svg">
+								<img src="images/star.svg">
+								<img src="images/star.svg">
+							</div>
+							<h4 class="main4comment1">Amazing work!</h4>
+							<p class="main4comment2">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Vitae <br>nulla diam in ac dictum a urna <br> viverra morbi. Morbi donec amet....</p>
+							<div class="main4person">
+								<div class="main4photo">
+									<img src="InShot_20221208_214445549.jpg">
+								</div>
+								<div class="main4name">
+									<h4>Tiana Philips</h4>
+									<p>Photographer</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="main4bloc">
+							<div class="main4pictures">
+								<img src="images/star.svg">
+								<img src="images/star.svg">
+								<img src="images/star.svg">
+								<img src="images/star.svg">
+								<img src="images/star.svg">
+							</div>
+							<h4 class="main4comment1">Great Quality!</h4>
+							<p class="main4comment2">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna  viverra morbi. Morbi donec amet....</p>
+							<div class="main4person">
+								<div class="main4photo">
+									<img src="InShot_20221208_214445549.jpg">
+								</div>
+								<div class="main4name">
+									<h4>Talan Westervelt</h4>
+									<p>Business Man</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main4bottom">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+			</div>
+
+			<div class="main5">
+					<h2 class="main5h2">Education</h2>
+					<p class="main5p">Amet minim mollit non deserunt ullamco est sit aliqua dolor <br> do amet sint. Velit officia consequat duis enim velit mollit. <br> lorem ipsum</p>
+					<div class="main5blocs">
+						<div class="main5bloc">
+							<div class="main5blocleft">
+								<h4>University of Toronto</h4>
+								<div class="main5student">
+									<p>Student</p>
+									<p class="main5studentp">Jan 1016 - Dec 2021</p>
+								</div>
+							</div>
+							<div class="main5blocright">
+								<h4>Certificate of web training</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.</p>
+							</div>
+						</div>
+						<hr>
+						<div class="main5bloc">
+							<div class="main5blocleft">
+								<h4>Programming Course</h4>
+								<div class="main5student">
+									<p>Student</p>
+									<p class="main5studentp">Jan 1016 - Dec 2021</p>
+								</div>
+							</div>
+							<div class="main5blocright">
+								<h4>Certificate of web training</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.</p>
+							</div>
+						</div>
+						<hr>
+						<div class="main5bloc">
+							<div class="main5blocleft">
+								<h4>Web developer courses</h4>
+								<div class="main5student">
+									<p>Student</p>
+									<p class="main5studentp">Jan 1016 - Dec 2021</p>
+								</div>
+							</div>
+							<div class="main5blocright">
+								<h4>Certificate of web training</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.</p>
+							</div>
+						</div>
+					</div>
+			</div>
+
+			<div class="main5">
+					<h2 class="main5h2">Work History</h2>
+					<p class="main5p">Amet minim mollit non deserunt ullamco est sit aliqua dolor <br> do amet sint. Velit officia consequat duis enim velit mollit. <br>lorem ipsum</p>
+
+					<div class="main5blocs">
+						<div class="main5bloc">
+							<div class="main5blocleft">
+								<h4>Lead Web Designer</h4>
+								<div class="main5student">
+									<p>Student</p>	
+									<p class="main5studentp">
+									Jan 1016 - Dec 2021
+									</p>
+								</div>
+							</div>
+							<div class="main5blocright">
+								<h4>Certificate of web training</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.</p>
+							</div>
+						</div>
+						<hr>
+						<div class="main5bloc">
+							<div class="main5blocleft">
+								<h4>Junior Web Designer</h4>
+								<div class="main5student">
+									<p>Student</p>	
+									<p class="main5studentp">
+									Jan 1016 - Dec 2021
+									</p>
+								</div>
+							</div>
+							<div class="main5blocright">
+								<h4>Certificate of web training</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.</p>
+							</div>
+						</div>
+						<hr>
+						<div class="main5bloc">
+							<div class="main5blocleft">
+								<h4>Senior Web Designer</h4>
+								<div class="main5student">
+									<p>Student</p>	
+									<p class="main5studentp">
+									Jan 1016 - Dec 2021
+									</p>
+								</div>
+							</div>
+							<div class="main5blocright">
+								<h4>Certificate of web training</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.</p>
+							</div>
+						</div>
+					</div>
+			</div>
+
+			<div class="main6">
+					<h2 class="main5h2">Portfolio</h2>
+					<p class="main5p">Amet minim mollit non deserunt ullamco est sit aliqua dolor <br> do amet sint. Velit officia consequat duis enim velit mollit. <br> lorem ipsum</p>
+					<div class="main6categoriescontainer">
+						<div class="main6categories">
+							<h4>All categories</h4>
+							<h4>UI Design</h4>
+							<h4>Web Templates</h4>
+							<h4>logo</h4>
+							<h4>Branding</h4>
+					</div>
+					</div>
+					
+					<div class="main6photocontainer">
+						
+						<div class="main6photo">
+							
+							<img class="main6photoimg" src="images/Image (1).svg">
+							<img class="main6photovector" src="images/Vector (1).svg">
+						</div>
+
+						<div class="main6photo">
+							<img class="main6photovector" src="images/Vector (1).svg">
+							<img class="main6photoimg" src="images/Image (2).svg">
+						</div>
+
+						<div class="main6photo">
+							<img class="main6photovector" src="images/Vector (1).svg">
+							<img class="main6photoimg" src="images/Image (3).svg">
+						</div>
+
+						<div class="main6photo">
+							<img class="main6photovector" src="images/Vector (1).svg">
+							<img class="main6photoimg" src="images/Image (4).svg">
+						</div>
+
+						<div class="main6photo">
+							<img class="main6photovector" src="images/Vector (1).svg">
+							<img class="main6photoimg" src="images/Image (5).svg">
+						</div>
+
+						<div class="main6photo">
+							<img class="main6photovector" src="images/Vector (1).svg">
+							<img class="main6photoimg" src="images/Image.svg">
+						</div>
+
+						<div class="main6photo">
+							<img class="main6photovector" src="images/Vector (1).svg">
+							<img class="main6photoimg" src="images/Image (6).svg">
+						</div>
+
+						<div class="main6photo">
+							<img class="main6photovector" src="images/Vector (1).svg">
+							<img class="main6photoimg" src="images/Image (7).svg">
+						</div>
+
+						<div class="main6photo">
+							<img class="main6photovector" src="images/Vector (1).svg">
+							<img class="main6photoimg" src="images/Image (8).svg">
+						</div>
+
+					</div>
+			</div>
+
+			<div class="main7">
+					<h2 class="main5h2">Blog</h2>
+					<p class="main5p">Amet minim mollit non deserunt ullamco est sit aliqua dolor <br> do amet sint. Velit officia consequat duis enim velit mollit. <br> lorem ipsum</p>
+					<div class="main7blocs">
+						<div class="main7bloc">
+							<img src="images/Image (1).svg">
+							<div>
+								<h4>How to make web tempates</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna</p>
+								<p style="color: #ffb400; cursor:pointer;">Learn more <img src="images/order.svg"></p>
+							</div>
+						</div>
+						<div class="main7bloc">
+							<img src="images/Image (2).svg">
+							<div>
+								<h4>How to make web tempates</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna</p>
+								<p style="color: #ffb400; cursor: pointer;">Learn more <img src="images/order.svg"></p>
+							</div>
+							
+						</div>
+						<div class="main7bloc">
+							<img src="images/Image (3).svg">
+							<div>
+								<h4>How to make web tempates</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna</p>
+								<p style="color: #ffb400; cursor: pointer;">Learn more <img src="images/order.svg"></p>
+							</div>
+						</div>
+					</div>
+			</div>
+
+			<div class="main8">
+				<div class="main8lefrcontainer">
+					<h2>Leave us your info</h2>
+					<div class="main8left">
+						<div>
+							
+							<label>
+								<p>Your Full Name ( Required)</p>
+								<input type="text" name="name" placeholder="Your name" required>
+							</label>
+						</div>
+
+						<div>						
+							<label>
+								<p>Your Email ( Required)</p>
+								<input type="Email" name="Email" placeholder="Your Email">
+							</label>
+						</div>
+						<div>
+							<label>
+								<p>Subject</p>
+								<input type="text" name="text" placeholder="Subject">
+							</label>
+						</div>
+						<div>
+							<label>
+								<p>Your message</p>
+								<textarea class="main8lefttext"></textarea>
+							</label>
+						</div>
+						<button class="main8leftbtn">SEND MESSAGE</button>
+
+						
+					</div>
+				</div>
+				
+
+				<div class="main8rightcontainer">
+					<h2>Contact information</h2>
+					<div class="main8right">
+						<div class="main8rightbloc">
+							<div class="main8righticonka">
+								<div>
+									<img src="images/Vector (2).svg">
+								</div>
+							</div>
+							<div class="main8righttext">
+								<h4>Country:</h4>
+								<p>Kazkhstan</p>
+							</div>
+							<div class="main8righttext">
+								<h4>City:</h4>
+								<p>Almaty</p>
+							</div>
+							<div class="main8righttext">
+								<h4>Streat:</h4>
+								<p>80 Panphilov, Almaly</p>
+							</div>
+						</div>
+
+						<div class="main8rightbloc">
+							<div class="main8righticonka">
+								<div>
+									<img src="images/Vector (3).svg">
+								</div>
+							</div>
+							<div class="main8righttext">
+								<h4>Email:</h4>
+								<p>aidana061004@gmail.com</p>
+							</div>
+							<div class="main8righttext">
+								<h4>Skype:</h4>
+								<p>None</p>
+							</div>
+							<div class="main8righttext">
+								<h4>Telegram:</h4>
+								<p>Айдана Әбдірәсіл</p>
+							</div>
+						</div>
+
+						<div class="main8rightbloc">
+							<div class="main8righticonka">
+								<div>
+									<img src="images/Vector (4).svg">
+								</div>
+							</div>
+							<div class="main8righttext">
+								<h4>Support services:</h4>
+								<p>15369</p>
+							</div>
+							<div class="main8righttext">
+								<h4>Office:</h4>
+								<p>+7 747 379 7238</p>
+							</div>
+							<div class="main8righttext">
+								<h4>Personal:</h4>
+								<p>+7 702 762 7449</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14..." width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+						
+					</iframe>
+			</div>
+			<div class="bottomimg">
+					<img src="images/Group 241.svg">
+					<img src="images/Frame (3).svg">
+					<img src="images/Frame (1).svg">
+					<img src="images/Frame (2).svg">	
+			</div>
+			<footer>
+				<p>2021 All Rights Reserved.Ojjomedia</p>	
+			</footer>
+		</main>
+
+		<div class="rightbar">
+			
+			<img class="rightbarimg" src="images/p1.svg">
+			
+			<div class="rightbarimgs">
+				<div class="rightbarword">Home</div>
+				<div class="poligon"></div>
+				<img src="images/p2.svg">
+			</div>
+			<div class="rightbarimgs">
+				<div class="rightbarword">Home</div>
+				<div class="poligon"></div>
+				<img src="images/p3.svg">
+			</div>
+			<div class="rightbarimgs">
+				<div class="rightbarword">Home</div>
+				<div class="poligon"></div>
+				<img src="images/p4.svg">
+			</div>
+			<div class="rightbarimgs">
+				<div class="rightbarword">Home</div>
+				<div class="poligon"></div>
+				<img src="images/p5.svg">
+			</div>
+			<div class="rightbarimgs">
+				<div class="rightbarword">Home</div>
+				<div class="poligon"></div>
+				<img src="images/p6.svg">
+			</div>
+			<div class="rightbarimgs">
+				<div class="rightbarword">Home</div>
+				<div class="poligon"></div>
+				<img alt="photo" src="images/p7.svg">
+			</div>
+		</div>
+
+    </div>
+</body>
+</script>
+</html>
